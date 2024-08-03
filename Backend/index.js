@@ -32,7 +32,7 @@ const StockRoutes = require("./routes/index")
 
 app.use("/api/v1",StockRoutes)
 
-// setInterval(fetchDataAndStore, 5000);
+setInterval(fetchDataAndStore, 5000);
 
 const port = process.env.PORT
 server.listen(port, () => {
